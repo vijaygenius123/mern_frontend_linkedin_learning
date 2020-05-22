@@ -1,8 +1,14 @@
 import React from 'react'
 
 const PlayerList = props => {
+    const { updateCurrentPlayer, players } = props
     return (
-        <div>Player List</div>
+        <div>
+            <ul className="collection with-header">
+                {players.map(player =>
+                    <li key={player._id} className="collection-item">{player.firstName}</li>)}
+            </ul>
+        </div>
     )
 }
 
