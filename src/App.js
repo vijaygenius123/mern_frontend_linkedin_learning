@@ -18,7 +18,8 @@ class App extends Component {
       .then(resp => this.setState({ players: resp.data }))
   }
 
-  updateCurrentPlayer = item => {
+  updateCurrentPlayer = (item) => {
+    console.log(item)
     this.setState({
       currentPlayer: item
     })
