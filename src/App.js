@@ -28,6 +28,11 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid" >
+        <nav>
+          <div className="nav-wrapper blue darken-1">
+            <a href="" className="brand-logo">Soccer App</a>
+          </div>
+        </nav>
         <div className="row">
           <div className="col s12">Menu</div>
         </div>
