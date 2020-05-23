@@ -28,18 +28,19 @@ class App extends Component {
   render() {
     return (
       <div className="container-fluid" >
-        <nav>
-          <div className="nav-wrapper blue darken-1">
-            <a href="" className="brand-logo">Soccer App</a>
-          </div>
-        </nav>
         <div className="row">
-          <div className="col s12">Menu</div>
+          <nav>
+            <div className="nav-wrapper blue darken-1">
+              <a href="/" className="brand-logo">Soccer App</a>
+            </div>
+          </nav>
         </div>
+
         <div className="row">
           <div className="col s3"><PlayerList players={this.state.players} updateCurrentPlayer={this.updateCurrentPlayer} /></div>
-          <div className="col s9"><Player /></div>
+          <div className="col s9"><Player player={this.state.currentPlayer} /></div>
         </div>
+
         <div className="row">
           <div className="col s12"><PlayerForm /></div>
         </div>
